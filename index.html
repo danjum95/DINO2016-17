@@ -1,12 +1,13 @@
-﻿<html>
+<html>
 <head>
 	<title>Komendy Git</title>
 	<meta charset="utf-8">
 </head>
 <style>
 body{
-    line-height: 36px;
-		background-color: blue;
+    line-height: 22px;
+	background-color:yellow;
+    background-repeat: no-repeat;
 }
  #1CC{
 	text-align : center;
@@ -26,25 +27,26 @@ ul.tick{
 	list-style-position : inside;
 	list-style-image: url("https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_check-16.png");
 }
+
 </style>
 <body>
-<h1>Opracowanie komend git</h1>
+<h1><center><b><u>Opracowanie komend git</u></b></center></h1>
 <h2>Zadania dla grupy 1CE</h2>
 <ul>
 	<li>
-		<strong>git config --global user.email ""</strong> - <span>ustawia globalnie adres e-mail użytkownika używany do commitowania</span>
+		<font size = "8" color="red">git config --global user.email ""</font>- <span>ustawia globalnie adres e-mail użytkownika używany do commitowania</span>
 	</li>
 	<li>
-		<strong>git commit -a -m ""</strong> - <span>automatycznie stage'uje wszystkie zmodyfikowane i usunięte pliki (za wyjątkiem nowych) i dodaje commit z komentarzem ""</span>
+		<font size = "8" color="red">git commit -a -m ""</font> - <span>automatycznie stage'uje wszystkie zmodyfikowane i usunięte pliki (za wyjątkiem nowych) i dodaje commit z komentarzem ""</span>
 	</li>
 	<li>
-		<strong>git diff --staged</strong> - <span>pokazuje różnice pomiędzy ostatnim commitem a zestage'owanymi zmianami</span>
+		<font size = "8" color="red">git diff --staged</font> - <span>pokazuje różnice pomiędzy ostatnim commitem a zestage'owanymi zmianami</span>
 	</li>
 	<li>
-		<strong>git checkout -b "branch"</strong> - <span>przełącza do gałęzi o nazwie "branch". Jeżeli nie istnieje gałąź o takiej nazwie, tworzy ją.</span>
+		<font size = "8" color="red">git checkout -b "branch"</font> - <span>przełącza do gałęzi o nazwie "branch". Jeżeli nie istnieje gałąź o takiej nazwie, tworzy ją.</span>
 	</li>
 	<li>
-		<strong>git log --graph --all</strong> - <span>wyświetla graficzną (choć tekstową) reprezentację historii wszystkich commitów w repozytorium</span>
+		<font size = "8" color="red">git log --graph --all</font> - <span>wyświetla graficzną (choć tekstową) reprezentację historii wszystkich commitów w repozytorium</span>
 		<br><figure><a href="http://i.imgur.com/8iLX0jS.png"><img src="http://i.imgur.com/8iLX0jS.png" title="git log w git bash (shell)" alt="Zachowanie komendy git log --graph -all w git bash" style='height: 25%; width: 25%; object-fit: cover'></a>
 		<figcaption>Działanie komendy w git bash (graficzna reprezentacja commitów)</figcaption> </figure>
 		<strong>Uwaga: Opcja --graph nie może być łączona z opcja --no-walk (która pokazuje tylko commity, ale bez ich poprzedników)</strong>
@@ -78,33 +80,33 @@ ul.tick{
 <h2>Zadania dla grupy 1CF</h2>
 <ul class = "tick">
 	<li>
-		<strong>git config --global color.ui true</strong> - <span>Komunikaty generowane przez komendy git'a w terminalu będą miały różne kolory. </span>
+		<font size = "8" color="red">git config --global color.ui true</font> - <span>Komunikaty generowane przez komendy git'a w terminalu będą miały różne kolory. </span>
 	</li>
 	<li>
-		<strong>git commit "NazwaPliku"</strong> - <span>Tworzy commit składający się z plików podanych jako argument "NazwaPliku". Pozostałe pliki w stanie staged nie są dodane do tego commita.</span>
+		<font size = "8" color="red">git commit "NazwaPliku"</font> - <span>Tworzy commit składający się z plików podanych jako argument "NazwaPliku". Pozostałe pliki w stanie staged nie są dodane do tego commita.</span>
 	</li>
 	<li>
-		<strong>git branch "name"</strong> - <span>Tworzy nową gałąź o nazwie "name".</span>
+		<font size = "8" color="red">git branch "name"</font> - <span>Tworzy nową gałąź o nazwie "name".</span>
 	</li>
 	<li>
-		<strong>git branch -v</strong> - <span>Wypisuje nazwę aktywnego brancha wraz z szczegółami ostatniego commita (początek skrótu sha1 oraz temat).</span>
+		<font size = "8" color="red">git branch -v</font> - <span>Wypisuje nazwę aktywnego brancha wraz z szczegółami ostatniego commita (początek skrótu sha1 oraz temat).</span>
 	</li>
 	<li>
-		<strong>git push "remote" "branch"</strong> - <span>Wysyła zmiany z ostatniego commita w lokalnej gałęzi "branch" do zdalnego repozytorium "remote".</span>
+		<font size = "8" color="red">git push "remote" "branch"</font> - <span>Wysyła zmiany z ostatniego commita w lokalnej gałęzi "branch" do zdalnego repozytorium "remote".</span>
 	</li>
 	<li>
-		<strong>git log "branch1" --not "branch2"</strong> - <span>Wyświetli historię commitów "branch1" z pominięciem commitów będących częścią "branch2".</span>
+		<font size = "8" color="red">git log "branch1" --not "branch2"</font> - <span>Wyświetli historię commitów "branch1" z pominięciem commitów będących częścią "branch2".</span>
 	</li>
 	<li>
-		<strong>git blame -C "filename"</strong> - <span>Wyszukuje fragmenty kodu przekopiowane z innych plików będących częścią tego samego commita.</span>
+		<font size = "8" color="red">git blame -C "filename"</font> - <span>Wyszukuje fragmenty kodu przekopiowane z innych plików będących częścią tego samego commita.</span>
 	</li>
 	<li>
-		<strong>git bisect (start, bad, good, reset)</strong> - <span>Pozwala na binarne wyszukiwanie commitu w którym pojawiła się konkretna zmiana.
+		<font size = "8" color="red">git bisect (start, bad, good, reset)</font> - <span>Pozwala na binarne wyszukiwanie commitu w którym pojawiła się konkretna zmiana.
 			<ul class = "tick">
-										<li>git bisect start - rozpoczyna wyszukiwanie</li>
-										<li>git bisect bad "name" - znakuje commit o nazwie "name" w którym pojawiła się zmiania</li>
-										<li>git bisect good "name" - znakuje commit o nazwie "name" w którym nie ma szukanej zmiany</li>
-										<li>git bisect reset - przywraca stan do ostatniego aktywnego commitu przed git bisect start</li>
+										<li><b><i><u>git bisect start</u></i></b> - rozpoczyna wyszukiwanie</li>
+										<li><b><i><u>git bisect bad "name"</u></i></b> - znakuje commit o nazwie "name" w którym pojawiła się zmiania</li>
+										<li><b><i><u>git bisect good "name"</u></i></b> - znakuje commit o nazwie "name" w którym nie ma szukanej zmiany</li>
+										<li><b><i><u>git bisect reset</u></i></b> - przywraca stan do ostatniego aktywnego commitu przed git bisect start</li>
 
 			</ul>
 			</span>
